@@ -1,0 +1,72 @@
+[
+  {
+    "key": "ctrl+enter",
+    "command": "-workbench.action.chat.applyInEditor",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-workbench.action.chat.insertCodeBlock",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-chatEditor.action.accept",
+    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
+  },
+  {
+    "key": "alt+cmd+i",
+    "command": "workbench.action.chat.open",
+    "when": "!chatSetupHidden"
+  },
+  // Focus
+  {
+    "key": "alt+1",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.focusThirdEditorGroup"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.focusFourthEditorGroup"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
+  },
+  // Jump 6 lines
+  {
+    "key": "cmd+up",
+    "command": "cursorMove",
+    "args": { "to": "up", "by": "line", "value": 4 }
+  },
+  {
+    "key": "cmd+down",
+    "command": "cursorMove",
+    "args": { "to": "down", "by": "line", "value": 4 }
+  },
+  {
+    "key": "shift+cmd+up",
+    "command": "cursorMove",
+    "args": { "to": "up", "by": "line", "value": 4, "select": true },
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+down",
+    "command": "cursorMove",
+    "args": { "to": "down", "by": "line", "value": 4, "select": true },
+    "when": "textInputFocus"
+  }
+]

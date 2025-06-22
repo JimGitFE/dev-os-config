@@ -1,0 +1,75 @@
+{
+  //
+  "window.titleBarStyle": "custom",
+  "window.title": "${rootName}",
+  "workbench.editor.labelFormat": "short",
+  "editor.formatOnSave": true,
+  "update.mode": "manual",
+  "terminal.integrated.env.windows": {},
+  "console-ninja.featureSet": "Community",
+  //
+  // Editor Layout settings
+  //
+  "window.zoomLevel": -0.6,
+  "workbench.sideBar.location": "left",
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "accessibility.dimUnfocused.enabled": true,
+  "accessibility.dimUnfocused.opacity": 1,
+  //
+  // GitHub Copilot settings
+  //
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  //
+  // Theme Palette settings
+  //
+  "workbench.colorTheme": "Dark+ Black",
+  "workbench.colorCustomizations": {
+    // "editor.background": "#150d06", // This will change the background color to black
+    "[Dark+ Black]": {
+      // "editor.background": "#02010057", // This will change the background color to black
+      "editor.background": "#111212", // This will change the background color to black
+      // "terminal.background": "#ff0000",
+      "titleBar.inactiveBackground": "#000000", // This will change the color of the title bar when VS Code is not focused
+      "input.background": "#111313", // This will change the background color to black
+      "terminal.background": "#181b1b",
+      "panel.background": "#181b1b",
+      "sideBar.background": "#181b1b"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // Multiline comments
+      { "scope": "comment.line.double-slash", "settings": { "foreground": "#a0a0a08f" } },
+      { "scope": "comment.block.documentation", "settings": { "foreground": "#97a4a7" } }
+    ]
+  },
+  // Back drop blur extension
+  "vscode-blur-linux.opacity": 20,
+  "frosted-glass-theme.backdropFilter": "blur(32px)",
+  "animations.Install-Method": "Apc Customize UI++",
+  "background.backgroundAlignment": ["Center Center", "Center Center", "Center Center", "Center Center"],
+  "background.backgroundBlur": ["50px", "25px", "50px", "50px"],
+  //
+  // Formatting and linting settings
+  //
+  "prettier.configPath": ".prettierrc",
+  "prettier.printWidth": 120,
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[silidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
