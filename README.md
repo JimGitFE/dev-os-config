@@ -24,7 +24,7 @@ Vscode:
 
 - Arrows (move line)
 - Shift Up Down (duplicate line)
-- + I (Copilot chat)
+- cmd + I (Copilot chat)
 - + Tab (swap tabs)
 - + Nums (inner window)
 
@@ -48,6 +48,7 @@ Vscode:
 ## Mac: Karabiner-Elements
 CTRL + [A, X, C, V]
 CTRL + SHIFT + Arrows
+Vscode config
 
 Complex modifications > add `karabiner.json`
 
