@@ -5,6 +5,7 @@ Platform Window Os Modifier
 
 - Space bar (app search)
 - Tab (App Switch)
+- Console ctrl behaviour
 
 - Arrow Left / Right (word by word)
 - C / V / X / A / L (copy & paste % cut & all)
@@ -25,12 +26,11 @@ Vscode:
 - Arrows (move line)
 - Shift Up Down (duplicate line)
 - cmd + I (Copilot chat)
-- + Tab (swap tabs)
+- + Tab (inapp tabs nav menu)
 - + Nums (inner window)
 
 ## Control
-
-- Console behaviour
+unused (bad typo)
 
 ## Fn
 
@@ -40,7 +40,7 @@ Vscode:
 # Remapping (Windows / MacOs / Ubuntu)
 
 ## Win: Auto Hot Key
-
+Win key = ctrl, ctrl tab etc. 
 ```
 `Win + R` → `type: shell:startup` (.ahk)
 ```

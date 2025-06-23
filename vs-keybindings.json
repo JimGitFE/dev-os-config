@@ -24,6 +24,11 @@
     "command": "workbench.action.chat.open",
     "when": "!chatSetupHidden"
   },
+  {
+    "key": "alt+ctrl+i",
+    "command": "workbench.action.chat.open",
+    "when": "!chatSetupHidden"
+  },
   // Focus
   {
     "key": "alt+1",
@@ -68,5 +73,71 @@
     "command": "cursorMove",
     "args": { "to": "down", "by": "line", "value": 4, "select": true },
     "when": "textInputFocus"
+  },
+  // Jumps Ubuntu
+  {
+    "key": "ctrl+up",
+    "command": "cursorMove",
+    "args": { "to": "up", "by": "line", "value": 4 }
+  },
+  {
+    "key": "ctrl+down",
+    "command": "cursorMove",
+    "args": { "to": "down", "by": "line", "value": 4 }
+  },
+  {
+    "key": "shift+ctrl+up",
+    "command": "cursorMove",
+    "args": { "to": "up", "by": "line", "value": 4, "select": true },
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+down",
+    "command": "cursorMove",
+    "args": { "to": "down", "by": "line", "value": 4, "select": true },
+    "when": "textInputFocus"
+  },
+  // Duplicate cells (ubuntu)
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  // Editor in group with alt
+  {
+    "key": "shift+alt+tab",
+    "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "alt+tab",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "alt+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "shift+alt+tab",
+    "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
   }
+  // Navigate menu tab shift
 ]
