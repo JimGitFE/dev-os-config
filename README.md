@@ -1,48 +1,64 @@
-# Apple keyboard mapping
+# OpSys Standard Keyboard Map
 
-## CMD
-Platform Window Os Modifier
+##### Defines a custom keyboard remapping standard for improving productivity and consistency across platforms (Windows, macOS, Linux) and applications (e.g., VSCode).
 
-- Space bar (app search)
-- Tab (App Switch)
-- Console ctrl behaviour
+## 1) CMD - Command - Left Win
 
-- Arrow Left / Right (word by word)
-- C / V / X / A / L (copy & paste % cut & all)
-- Delete (one word del)
+##### **CMD / Win** Acts as a **primary platform modifier** for shortcuts (e.g., app switching, killing apps) and standard actions (e.g., copy, paste, move cursor).
 
-Vscode:
+### - Platform / Os Modifiers
 
-- Up / Down (move 3 lines)
-- Enter (new line under)
+1. Space: **App Finder Search**
+2. Tab: **App-Switching**
+3. Q: **Kill application**
 
-## Option
-In application / VSCode Modifier
+### - Keystrokes - Standard shortcuts
 
-- Nonel
+1. Left / Right: **Move cursor word by word**
+2. C / V / X / A / L / D: **Standard methods**
+3. Delete: **Delete word to left** (supr | Fn)
+4. **Console** standard behaviour (ctrl)
 
-Vscode:
+### - Vscode:
 
-- Arrows (move line)
-- Shift Up Down (duplicate line)
-- cmd + I (Copilot chat)
-- + Tab (inapp tabs nav menu)
-- + Nums (inner window)
+1. Up / Down: **Move 4 lines**
+2. Enter: **New line below**
+3. I: **Cursor to AI Chat**
+4. B / Shift + ( X / E / P ): **Panel interactions** 
 
-## Control
-unused (bad typo)
+## 2) Option - Left Alt 
 
-## Fn
+##### **Option / Alt** Used for **application-specific** shortcuts (e.g., brush size, selecting frames in VSCode)
 
-- Left Right Up Down (far end)
-- + Delete (back delete)
+### - Vscode:
 
-# Remapping (Windows / MacOs / Ubuntu)
+1. Tab: **Inner tab**
+2. Up / Down: **Grab & move line**
+2. Shift + ( Up / Down ): **Duplicate up or down**
+5. Numerics: **App frame selector**
+<!-- 3. cmd + I (Copilot chat) -->
+
+## 3) Control - Left Ctrl
+
+##### Unused (bad touch typing) - helps remapping (extra key)
+
+## 4) FN - Special key
+
+##### **FN** Defines **special actions** like forward delete and moving the cursor to document edges (contained within level hardware / firmware).
+
+### - Platform / Os Modifiers
+
+1. Left / Right / Up / Down: **Move cursor to far end**
+2. Delete: **Forward delete**
+
+# Keyboard Remapping - OpSys
+
+##### Platform-specific remapping instructions using tools like **AutoHotkey** (Windows), **Karabiner-Elements** (macOS), and **Xmodmap** (Linux).
 
 ## Win: Auto Hot Key
-Win key = ctrl, ctrl tab etc. 
+Win key = alt, alt = ctrl. 
 ```
-`Win + R` → `type: shell:startup` (.ahk)
+`Win + R` → `type: shell:startup` (win_binding.ahk as shortcut)
 ```
 
 ## Mac: Karabiner-Elements
