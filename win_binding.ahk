@@ -31,16 +31,18 @@ return
 <#c::Send, ^c
 <#x::Send, ^x
 <#v::Send, ^v
-<#d::Send, ^d
 <#a::Send, ^a
+<#z::Send, ^z
+<#+z::Send, ^+z
 <#s::Send, ^s
-<#w::Send, ^w
 <#r::Send, ^r
+; CMD.3.1 vsc
+<#j::Send, ^j
+<#d::Send, ^d
+<#w::Send, ^w
 <#t::Send, ^t
 <#f::Send, ^f
 ~<#l::Send, ^l
-<#z::Send, ^z
-<#+z::Send, ^+z
 ; CMD.3 Delete word to left
 <#Backspace::Send, ^{Backspace}
 <#Delete::Send, ^{Delete}
