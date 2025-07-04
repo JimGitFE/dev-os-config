@@ -1,0 +1,47 @@
+{
+  "description": "1.1 Platform Os Modifiers",
+  "manipulators": [
+    {
+        "type": "basic",
+        "from": { "key_code": "delete_or_backspace", "modifiers": { "mandatory": ["command"] } },
+        "to": [{ "key_code": "delete_or_backspace", "modifiers": ["option"] }],  
+      "conditions": [
+        { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] }
+      ]
+    },
+    
+    {
+      "type": "basic",
+      "from": { "key_code": "left_arrow", "modifiers": { "mandatory": ["command", "shift"] } },
+      "to": [{ "key_code": "left_arrow", "modifiers": ["option", "shift"] }],  
+      "conditions": [
+        { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] }
+      ]
+    },
+    {
+        "type": "basic",
+        "from": { "key_code": "left_arrow", "modifiers": { "mandatory": ["command"] } },
+        "to": [{ "key_code": "left_arrow", "modifiers": ["option"] }],  
+        "conditions": [
+          { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] }
+        ]
+      },
+
+      {
+        "type": "basic",
+        "from": { "key_code": "right_arrow", "modifiers": { "mandatory": ["command", "shift"] } },
+        "to": [{ "key_code": "right_arrow", "modifiers": ["option", "shift"] }],  
+        "conditions": [
+          { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] }
+        ]
+      },
+      {
+        "type": "basic",
+        "from": { "key_code": "right_arrow", "modifiers": { "mandatory": ["command"] } },
+        "to": [{ "key_code": "right_arrow", "modifiers": ["option"] }],  
+        "conditions": [
+          { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] }
+        ]
+      }
+  ]
+}

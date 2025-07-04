@@ -62,29 +62,7 @@
     "command": "explorer.openToSide",
     "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
   },
-  // Jump 6 lines
-  {
-    "key": "cmd+up",
-    "command": "cursorMove",
-    "args": { "to": "up", "by": "line", "value": 4 }
-  },
-  {
-    "key": "cmd+down",
-    "command": "cursorMove",
-    "args": { "to": "down", "by": "line", "value": 4 }
-  },
-  {
-    "key": "shift+cmd+up",
-    "command": "cursorMove",
-    "args": { "to": "up", "by": "line", "value": 4, "select": true },
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+cmd+down",
-    "command": "cursorMove",
-    "args": { "to": "down", "by": "line", "value": 4, "select": true },
-    "when": "textInputFocus"
-  },
+
   // Jumps Ubuntu
   {
     "key": "alt+up",
@@ -108,7 +86,7 @@
     "args": { "to": "down", "by": "line", "value": 4, "select": true },
     "when": "textInputFocus"
   },
-  // Duplicate & move cells (Windows)
+  // Duplicate & move lines (Windows)
   {
     "key": "shift+alt+up",
     "command": "-editor.action.insertCursorAbove",
@@ -149,28 +127,4 @@
     "command": "-editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   }
-
-  // Editor in group with alt (!Windows)
-  // {
-  //   "key": "shift+alt+tab",
-  //   "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
-  //   "when": "inEditorsPicker && inQuickOpen"
-  // },
-  // {
-  //   "key": "alt+tab",
-  //   "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
-  //   "when": "inEditorsPicker && inQuickOpen"
-  // },
-  // {
-  //   "key": "alt+tab",
-  //   "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-  //   "when": "!activeEditorGroupEmpty"
-  // },
-  // {
-  //   "key": "shift+alt+tab",
-  //   "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
-  //   "when": "!activeEditorGroupEmpty"
-  // }
-  // Navigate menu tab shift
-  // Move lines alt -> ctrl (Windows)
 ]

@@ -55,23 +55,26 @@
 
 # Keyboard Remapping - OpSys
 
-<small> Platform-specific remapping instructions using tools like **AutoHotkey** (Windows), **Karabiner-Elements** (macOS), and **Xmodmap** (Linux).</small>
+<small> Platform-specific remapping instructions using tools like **AutoHotkey** (Windows), **Karabiner-Elements** (macOS), and **Xmodmap** (Linux). Note: ctrl + Tabe / up / down is default for vscode tabs interactive menu and alt + Tab is default for Windows app switch interactive menu</small>
 
 ## Win: Auto Hot Key
 `Win = alt` App switcher (default: alt)
+`alt = ctrl` (VSCode, alt acts as ctrl)
 
-`alt = ctrl`
+`Win + [A, X, C, V, ...] = CTRL`
+`Win + Up Down = Alt Up Down` (VSCode interactive menu)
+`Win + Left Right = CTRL Left Right` (VSCode, up down move line)
 
 ```
 `Win + R` → `type: shell:startup` (win_binding.ahk as shortcut)
 ```
 
 ## Mac: Karabiner-Elements
-`CMD = CTRL + [A, X, C, V]`
-Up and down, to alt (move lines in vscode)
-smooth interactive menu (vscode) with: `ALT = CTRL`, keep alt up & down (2.2) 
-CTRL + SHIFT + Arrows
-Vscode config
+
+`alt = ctrl`
+`CMD + [A, X, C, V] = CTRL`
+
+1.1 Command mapping to `ctrl`
 
 ```
 Karabiner > Complex modifications > add `karabiner.json`
