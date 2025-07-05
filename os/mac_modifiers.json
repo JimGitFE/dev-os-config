@@ -1,7 +1,14 @@
 {
   "description": "1 Platform Os Modifiers",
   "manipulators": [
-
+    {
+      "type": "basic",
+      "from": { "key_code": "f6" },
+      "to": [
+        { "key_code": "q", "modifiers": ["left_control", "left_command"] }
+      ]
+    },
+    
     {
         "type": "basic",
         "from": { "key_code": "delete_or_backspace", "modifiers": { "mandatory": ["command"] } },
