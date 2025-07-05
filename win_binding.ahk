@@ -2,16 +2,16 @@
 #SingleInstance Force
 
 ; ######################
-; Platform / Os Modifiers
+; Platform / Os Modifiers 
+; CMD.1 & ALT.1
 ; ######################
 
-; CMD.1 App Finder Menu
+; CMD.1 App Finder Search
 LWin::return
 ~<#Space::Send, {RWin}
-; CMD.2 App switcher interactive menu
+; CMD.2 App-switching (interactive menu)
 <#Tab::
     Send, {LAlt down}{Tab}
-    ; This is the crucial part. The script pauses here.
     KeyWait, LWin 
     Send, {LAlt up}
 return
@@ -19,10 +19,11 @@ return
 <#q::Send, >!{F4}
 
 ; ############
-; Keystrokes
+; Keystrokes 
+; CMD.2 & ALT.2
 ; ############
 
-; CMD.1 Word by word move
+; CMD.1 Move cursor word by word
 <#Left::Send, ^{Left}
 <#Right::Send, ^{Right}
 <#+Left::Send, ^+{Left}
@@ -36,7 +37,7 @@ return
 <#+z::Send, ^+z
 <#s::Send, ^s
 <#r::Send, ^r
-; CMD.3.1 vsc
+; CMD.2 vsc
 <#j::Send, ^j
 <#d::Send, ^d
 <#w::Send, ^w
@@ -47,31 +48,33 @@ return
 <#Backspace::Send, ^{Backspace}
 <#Delete::Send, ^{Delete}
 
-
 ; ############
 ; VScode
+; CMD.3 & ALT.3
 ; ############
 
+; CMD.1 Move 4 lines
+<#Up::Send, !{Up} ; Ctrl + Up
+<#Down::Send, !{Down} ; Ctrl + Down
+<#+Up::Send, !+{Up}
+<#+Down::Send, !+{Down}
+; CMD.2 New line below
+<#Enter::Send, ^{Enter}
+; CMD.4 Panel Interactions
+<#/::Send, ^/
 <#b::Send, ^b
 <#i::Send, ^i
 <#+x::Send, ^+x
 <#+e::Send, ^+e
 <#+p::Send, ^+p
-; vs Frame select
+; ALT.1 & ALT.2 Inner tab & Grab & move line 
+*LAlt::LCtrl
+; ALT.4 App frame (tab) selector
 <#1::Send, !1
 <#2::Send, !2
 <#3::Send, !3
 <#4::Send, !4
 <#5::Send, !5
 <#6::Send, !6
-; vscode tab switcher interactive menu
-*LAlt::LCtrl
-<#/::Send, ^/
-<#Enter::Send, ^{Enter}
-; Allows alt => ctrl mapping (windows app switch with alt)
-<#Up::Send, !{Up} ; Ctrl + Up
-<#Down::Send, !{Down} ; Ctrl + Down
-<#+Up::Send, !+{Up}
-<#+Down::Send, !+{Down}
 
 ; ############

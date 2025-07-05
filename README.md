@@ -59,7 +59,7 @@
 
 ## Win: Auto Hot Key
 `Win = alt` App switcher (default: alt)
-`alt = ctrl` (VSCode, alt acts as ctrl)
+`alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
 `Win + [A, X, C, V, ...] = CTRL`
 `Win + Up Down = Alt Up Down` (VSCode interactive menu)
@@ -71,8 +71,8 @@
 
 ## Mac: Karabiner-Elements
 
-`alt = ctrl`
-`CMD + [A, X, C, V] = CTRL`
+`CMD + [Delete, Left, Right] = CTRL` (word by word)
+`alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
 1.1 Command mapping to `ctrl`
 
