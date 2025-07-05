@@ -1,6 +1,7 @@
 {
-  "description": "1.1 Platform Os Modifiers",
+  "description": "1 Platform Os Modifiers",
   "manipulators": [
+
     {
         "type": "basic",
         "from": { "key_code": "delete_or_backspace", "modifiers": { "mandatory": ["command"] } },

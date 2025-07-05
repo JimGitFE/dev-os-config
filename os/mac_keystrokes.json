@@ -1,5 +1,5 @@
 {
-    "description": "Default to mac?, not needed",
+    "description": "2 Keystrokes (already default to mac)",
     "manipulators": [
     {           
         "type": "basic",
