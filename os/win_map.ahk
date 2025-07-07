@@ -3,7 +3,7 @@
 
 ; ######################
 ; Platform / Os Modifiers 
-; CMD.1 & ALT.1
+; CMD.1 & ALT.1 & F.1
 ; ######################
 
 ; CMD.1 App Finder Search
@@ -17,6 +17,19 @@ LWin::return
 return
 ; CMD.3 Kill Application
 <#q::Send, >!{F4}
+
+F6::
+    ; Run as admin!
+    RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
+    Sleep 100
+    DllCall("LockWorkStation")
+    Sleep 100
+    RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 1
+    Sleep 100
+    SendMessage, 0x112, 0xF170, 2,, Program Manager  ; Power off monitor
+    ; Hibernate
+    ; DllCall("PowrProf\SetSuspendState", "int", 0, "int", 1, "int", 0)
+return
 
 ; ############
 ; Keystrokes 
@@ -42,7 +55,7 @@ return
 <#d::Send, ^d
 <#w::Send, ^w
 <#t::Send, ^t
-<#f::Send, ^f
+<#f::Send, ^fl
 ~<#l::Send, ^l
 ; CMD.3 Delete word to left
 <#Backspace::Send, ^{Backspace}
