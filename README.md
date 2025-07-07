@@ -53,11 +53,20 @@
 1. `Left, Right, Up, Down`: **Move cursor to far end**
 2. `Delete`: **Forward delete**
 
+## **(5) Function Keys** - F5 / F6
+<small>Often mapped to application-specific actions (e.g., in browsers, it may focus the address bar).</small>
+
+### (5.1) Platform / Os Modifiers
+1. `F6` **Lock Screen** (CMD + CTRL + Q on mac)
+
 # Keyboard Remapping - OpSys
 
 <small> Platform-specific remapping instructions using tools like **AutoHotkey** (Windows), **Karabiner-Elements** (macOS), and **Xmodmap** (Linux). Note: ctrl + Tabe / up / down is default for vscode tabs interactive menu and alt + Tab is default for Windows app switch interactive menu</small>
 
 ## Win: Auto Hot Key
+```
+`Win + R` → `type: shell:startup` (win_map.ahk as shortcut with admin [x])
+```
 `Win + Tab` = `alt + Tab` App switcher (default: alt)
 `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
@@ -65,27 +74,31 @@
 `Win + Up Down = Alt Up Down` (VSCode interactive menu)
 `Win + Left Right = CTRL Left Right` (VSCode, up down move line)
 
-```
-`Win + R` → `type: shell:startup` (win_map.ahk as shortcut with admin [x])
-```
+- `Win = alt` App switcher (default: alt)
+* `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
+- `Win + [A, X, C, V, ...] = CTRL`
+
 
 ## Mac: Karabiner-Elements
-
-`CMD + [Delete, Left, Right] = CTRL` (word by word)
-`alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
-
 ```
 Karabiner > Complex modifications > add `karabiner.json`
 ```
 
-## Deb: Xmodmap
-`CMD = CTRL + [A, X, C, V]`
+- `CMD + [Delete, Left, Right] = CTRL` (word by word)
+* `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
+## Deb: Xmodmap
 ```bash
 xmodmap ~/.Xmodmap
 ```
+- `CMD = CTRL + [A, X, C, V]`
 
 # VSCode Settings
+
+Keybindings, cursor up and down 4 lines with alt <= `CMD`
+
+* `Win + [Up, Down]` = `Alt [Up, Down]` Move cursor 4 lines (reason: VSCode interactive menu)
+- `Win + [Left, Right]` = `CTRL + [Left, Right]` (VSCode, up down move line)
 
 Config (Zoom / formatter / tab layout)
 Theme
