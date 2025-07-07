@@ -40,6 +40,14 @@
     "command": "workbench.action.chat.open",
     "when": "!chatSetupHidden"
   },
+  {
+    "key": "cmd+shift+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
   // Focus
   {
     "key": "alt+1",
