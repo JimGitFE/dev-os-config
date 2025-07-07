@@ -58,7 +58,7 @@
 <small> Platform-specific remapping instructions using tools like **AutoHotkey** (Windows), **Karabiner-Elements** (macOS), and **Xmodmap** (Linux). Note: ctrl + Tabe / up / down is default for vscode tabs interactive menu and alt + Tab is default for Windows app switch interactive menu</small>
 
 ## Win: Auto Hot Key
-`Win = alt` App switcher (default: alt)
+`Win + Tab` = `alt + Tab` App switcher (default: alt)
 `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
 `Win + [A, X, C, V, ...] = CTRL`
@@ -66,15 +66,13 @@
 `Win + Left Right = CTRL Left Right` (VSCode, up down move line)
 
 ```
-`Win + R` → `type: shell:startup` (win_binding.ahk as shortcut)
+`Win + R` → `type: shell:startup` (win_map.ahk as shortcut with admin [x])
 ```
 
 ## Mac: Karabiner-Elements
 
 `CMD + [Delete, Left, Right] = CTRL` (word by word)
 `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
-
-1.1 Command mapping to `ctrl`
 
 ```
 Karabiner > Complex modifications > add `karabiner.json`
