@@ -2,7 +2,7 @@
 
 <small> Defines a custom keyboard remapping standard for improving productivity and consistency across platforms (Windows, macOS, Linux) and applications (e.g., VSCode).</small>
 
-## **(1) CMD** - Command - Left Win
+## **(1) CMD**: Left Command Key
 
 <small> **CMD / Win** Acts as a **primary platform modifier** for shortcuts (e.g., app switching, killing apps) and standard actions (e.g., copy, paste, move cursor).</small>
 
@@ -26,7 +26,7 @@
 3. `I`: **Cursor to AI Chat**
 4. `B, Shift + [B, X, E, P]`: **Panel interactions** 
 
-## **(2) Option** - Left Alt 
+## **(2) ALT**: Left Option Key
 
 <small> **Option / Alt** Used for **application-specific** shortcuts (e.g., brush size, selecting frames in VSCode)</small>
 
@@ -38,12 +38,12 @@
 2. `Shift +  [Up, Down]`: **Duplicate up or down**
 5. `Numerics`: **App frame selector**
 
-## **(3) Control** - Left Ctrl
+## **(3) CTRL**: Left Control Key
 
 <small> Unused (bad touch typing) - helps remapping (extra key)</small>
 
 
-## **(4) FN** - Special key
+## **(4) FN**: Special Key
 
 <small> **FN** Defines **special actions** like forward delete and moving the cursor to document edges (contained within level hardware / firmware).
 </small>
@@ -53,7 +53,7 @@
 1. `Left, Right, Up, Down`: **Move cursor to far end**
 2. `Delete`: **Forward delete**
 
-## **(5) Function Keys** - F5 / F6
+## **(5) F#**: Function Keys
 <small>Often mapped to application-specific actions (e.g., in browsers, it may focus the address bar).</small>
 
 ### (5.1) Platform - Os Modifiers
@@ -67,13 +67,6 @@
 ```
 `Win + R` → `type: shell:startup` (win_map.ahk as shortcut with admin [x])
 ```
-`Win + Tab` = `alt + Tab` App switcher (default: alt)
-`alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
-
-`Win + [A, X, C, V, ...] = CTRL`
-`Win + Up Down = Alt Up Down` (VSCode interactive menu)
-`Win + Left Right = CTRL Left Right` (VSCode, up down move line)
-
 - `Win = alt` App switcher (default: alt)
 * `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 - `Win + [A, X, C, V, ...] = CTRL`
