@@ -24,7 +24,7 @@
 1. `Up, Down`: **Move 4 lines**
 2. `Enter`: **New line below**
 3. `I`: **Cursor to AI Chat**
-4. `B, Shift + [X, E, P]`: **Panel interactions** 
+4. `B, Shift + [B, X, E, P]`: **Panel interactions** 
 
 ## **(2) Option** - Left Alt 
 
