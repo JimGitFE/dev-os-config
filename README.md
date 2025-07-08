@@ -6,7 +6,7 @@
 
 <small> **CMD / Win** Acts as a **primary platform modifier** for shortcuts (e.g., app switching, killing apps) and standard actions (e.g., copy, paste, move cursor).</small>
 
-### (1.1) Platform / Os Modifiers
+### (1.1) Platform - Os Modifiers
 
 1. `Space`: **App Finder Search**
 2. `Tab`: **App-Switching**
@@ -19,7 +19,7 @@
 3. `Delete`: **Delete word to left** (supr | Fn)
 4. **Console** standard behaviour (ctrl)
 
-### (1.3) Vscode:
+### (1.3) Vscode - InApp:
 
 1. `Up, Down`: **Move 4 lines**
 2. `Enter`: **New line below**
@@ -31,7 +31,7 @@
 <small> **Option / Alt** Used for **application-specific** shortcuts (e.g., brush size, selecting frames in VSCode)</small>
 
 
-### (2.3) Vscode:
+### (2.3) Vscode - InApp:
 
 1. `Tab`: **Inner tab** (smooth interaction, + shift)
 2. `Up, Down`: **Grab & move line**
@@ -48,7 +48,7 @@
 <small> **FN** Defines **special actions** like forward delete and moving the cursor to document edges (contained within level hardware / firmware).
 </small>
 
-### (4.1) Platform / Os Modifiers
+### (4.1) Platform - Os Modifiers
 
 1. `Left, Right, Up, Down`: **Move cursor to far end**
 2. `Delete`: **Forward delete**
@@ -56,7 +56,7 @@
 ## **(5) Function Keys** - F5 / F6
 <small>Often mapped to application-specific actions (e.g., in browsers, it may focus the address bar).</small>
 
-### (5.1) Platform / Os Modifiers
+### (5.1) Platform - Os Modifiers
 1. `F6` **Lock Screen** (CMD + CTRL + Q on mac)
 
 # Keyboard Remapping - OpSys
