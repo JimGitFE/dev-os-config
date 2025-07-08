@@ -65,8 +65,15 @@
 
 ## Win: Auto Hot Key
 ```
-`Win + R` → `type: shell:startup` (win_binding.ahk as shortcut)
+`Win + R` → `type: shell:startup` (win_map.ahk as shortcut with admin [x])
 ```
+`Win + Tab` = `alt + Tab` App switcher (default: alt)
+`alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
+
+`Win + [A, X, C, V, ...] = CTRL`
+`Win + Up Down = Alt Up Down` (VSCode interactive menu)
+`Win + Left Right = CTRL Left Right` (VSCode, up down move line)
+
 - `Win = alt` App switcher (default: alt)
 * `alt = ctrl` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 - `Win + [A, X, C, V, ...] = CTRL`
