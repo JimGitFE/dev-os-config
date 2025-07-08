@@ -1,0 +1,34 @@
+;; global configuration options
+(defcfg
+	process-unmapped-keys yes
+)
+
+(defsrc
+  tab   1 2 3 4 5 6 7
+         q w e r t i p     bks
+	  a s d f j l
+        z x c v b n m /     up
+  lctl lmeta   spc     lft down rght
+)
+
+(deflayer default
+  tab     _ _ _ _ _ _ _
+	 _ _ _ _ _ _ _     _
+	  _ _ _ _ _ _
+	_ _ _ _ _ _ _ _    _
+  lctl lalt      _       _ _ _
+)
+
+(deflayer ctl_cmd
+  tab    C-1 C-2 C-3 C-4 C-5 C-6 C-7
+        C-q C-w C-e C-r C-t C-i C-p     C-bks
+         C-a C-s C-d C-f C-j C-l
+       C-z C-x C-c C-v C-b C-n C-m C-/     A-up
+  _  _            C-spc            C-left A-down C-right
+)
+
+(defalias
+  ;;cmd (tap-hold-press 200 200 lalt (layer-toggle ctl_cmd))
+  ;;cmd (layer-while-held ctl_cmd)
+  ;;lmeta (tap-hold-press 200 200 M-up C-right)
+)
