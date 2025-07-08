@@ -1,0 +1,406 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 47
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+v",
+        "name": "2.2 Paste",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 45
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+x",
+        "name": "2.2 Cut",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 30
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+a",
+        "name": "2.2 All",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 106
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Right",
+        "name": "2.1 Rght",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 105
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Left",
+        "name": "2.1 Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 103
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Alt_L+Up",
+        "name": "3.1 Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 56
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L",
+        "name": "0 ALT",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 108
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Alt_L+Down",
+        "name": "3.1 Dwn",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+l",
+        "name": "2.2 Line",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 31
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+s",
+        "name": "2.2 Save",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 46
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+c",
+        "name": "2.2 Copy",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 44
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+z",
+        "name": "2.2 Back",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 42
+            },
+            {
+                "type": 1,
+                "code": 44
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Shift_L+z",
+        "name": "2.2 Forth",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 14
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+BackSpace",
+        "name": "2.3 Delete",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 111
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Delete",
+        "name": "2.3 F Delete",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 28
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Enter",
+        "name": "3.2 Enter",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 23
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+i",
+        "name": "3.3 IA",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 48
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+b",
+        "name": "3.4 Panel Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 56
+            },
+            {
+                "type": 1,
+                "code": 48
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_RbShift_L+b",
+        "name": "3.4 Panel Right",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 18
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+e",
+        "name": "3.4 Explorer",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 25
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+p",
+        "name": "3.4 Config",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 16
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + w",
+        "name": "1.3 Kill App",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 2
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R + 1",
+        "name": "3.5 Num 1",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 3
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R + 2",
+        "name": "3.5 Num 2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 4
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R + 3",
+        "name": "3.5 Num 3",
+        "mapping_type": "key_macro"
+    }
+]
