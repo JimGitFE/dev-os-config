@@ -347,22 +347,6 @@
             },
             {
                 "type": 1,
-                "code": 16
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Super_L + w",
-        "name": "1.3 Kill App",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 125
-            },
-            {
-                "type": 1,
                 "code": 2
             }
         ],
@@ -401,6 +385,38 @@
         "target_uinput": "keyboard",
         "output_symbol": "Control_R + 3",
         "name": "3.5 Num 3",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 20
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R + t",
+        "name": "2.2 New Tab",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 17
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+w",
+        "name": "2.2 Kill Tab",
         "mapping_type": "key_macro"
     }
 ]
