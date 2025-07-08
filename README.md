@@ -77,15 +77,14 @@
 ```
 Karabiner > Complex modifications > add `karabiner.json`
 ```
-
 - `CMD` + [`Delete`, `Left`, `Right`] = `CTRL` (word by word)
 * `ALT` = `CTRL` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
 ## Lnx: keyd (C) Xmodmap
-```bash
+```
 Input Mapper > Keyboard > Keystrokes Preset
 ```
-- `CMD` = `ALT` (App switcher alt + tab + `)
+- `CMD` (App switcher Super + Shift + Tab`)
 - `ALT` = `CTRL` (VSCode tab switcher)
 - `CMD` = `CTRL` + [`A`, `X`, `C`, `V`]
 
