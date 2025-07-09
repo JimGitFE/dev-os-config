@@ -15,7 +15,7 @@
 ### (1.2) Keystrokes - Standard shortcuts
 
 1. `Left`, `Right`: **Move cursor word by word**
-2. [`C`, `V`, `X`, `A`, `L`, `D`]: **Standard methods**
+2. `C`, `V`, `X`, `A`, `R`, `F`, `L`, `D`: **Standard methods**
 3. `Delete`: **Delete word to left** (supr | Fn)
 4. **Console** standard behaviour (ctrl)
 
@@ -24,7 +24,7 @@
 1. `Up`, `Down`: **Move 4 lines**
 2. `Enter`: **New line below**
 3. `I`: **Cursor to AI Chat**
-4. `B`, `Shift` + [`B`, `X`, `E`, `P`]: **Panel interactions**
+4. `B`, `X`, `E`, `P`, `N`, `J`, `/`: **Panel interactions**
 5. `T`, `W`: **Tab interactions** (new | remove)
 
 ## **(2) ALT**: Left Option Key

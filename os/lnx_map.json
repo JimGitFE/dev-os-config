@@ -284,27 +284,7 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "Control_R+b",
-        "name": "3.4 Panel Left",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 125
-            },
-            {
-                "type": 1,
-                "code": 56
-            },
-            {
-                "type": 1,
-                "code": 48
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Control_RbShift_L+b",
-        "name": "3.4 Panel Right",
+        "name": "3.4 Panel",
         "mapping_type": "key_macro"
     },
     {
@@ -417,6 +397,118 @@
         "target_uinput": "keyboard",
         "output_symbol": "Control_R+w",
         "name": "2.2 Kill Tab",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 36
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+j",
+        "name": "3.4 Console",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 49
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+n",
+        "name": "3.4 New Window",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 16
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+q",
+        "name": "1.3 Quit",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 19
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+r",
+        "name": "2.2 Reload",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 53
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+/",
+        "name": "2.2 Comment",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 32
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+d",
+        "name": "3.4 Mirror select",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 33
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+f",
+        "name": "2.2 Find",
         "mapping_type": "key_macro"
     }
 ]
