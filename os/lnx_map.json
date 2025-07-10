@@ -251,7 +251,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_R+Enter",
+        "output_symbol": "Control_R+Return",
         "name": "3.2 Enter",
         "mapping_type": "key_macro"
     },
@@ -475,7 +475,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_R+/",
+        "output_symbol": "Control_R+slash",
         "name": "2.2 Comment",
         "mapping_type": "key_macro"
     },
