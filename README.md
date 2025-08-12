@@ -70,6 +70,13 @@
 1. `k`, `;`, `o`, `l`: **Move Cursor** (Left, Right, Up, Down)
 2. `Shift` + `CapsLock` + [`k`, `;`, `o`, `l`]: **Resize / Move Window**
 
+# Keyboard Layouts
+
+## EU with Fn key
+
+CapsLock => LAlt
+FN => LCtrl
+
 # Keyboard Remapping - OpSys
 
 <small> Platform-specific remapping instructions using tools like **AutoHotkey** (Windows), **Karabiner-Elements** (macOS), and **Xmodmap** (Linux). Note: ctrl + Tabe / up / down is default for vscode tabs interactive menu and alt + Tab is default for Windows app switch interactive menu</small>

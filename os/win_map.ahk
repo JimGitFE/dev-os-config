@@ -159,7 +159,7 @@ moveCursor(key, onFn, asMod = "LWin") {
     wShft := shft ? "+" : "" ; With shift
     wMod := cmd or opt ? preMod : ""
 
-    if (fn and shft) {
+    if (fn and opt) {
         ; resize / move windows (ctrl shft)
         SendInput, {RWin Down}%key%
     } else if (fn) {
