@@ -82,6 +82,31 @@
           "to": [ { "key_code": "right_arrow" } ],
           "conditions": [ 
             { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] } ]
+        },
+
+        {
+          "type": "basic",
+          "from": { "key_code": "k", "modifiers": { "mandatory": ["left_control", "right_command"], "optional": ["any"] } },
+          "to": [ { "key_code": "home" } ],
+          "conditions": [ { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "semicolon", "modifiers": { "mandatory": ["left_control", "right_command"], "optional": ["any"] } },
+          "to": [ { "key_code": "end" } ],
+          "conditions": [ { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "o", "modifiers": { "mandatory": ["left_control", "right_command"], "optional": ["any"] } },
+          "to": [ { "key_code": "page_up" } ],
+          "conditions": [ { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "l", "modifiers": { "mandatory": ["left_control", "right_command"], "optional": ["any"] } },
+          "to": [ { "key_code": "page_down" } ],
+          "conditions": [ { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] } ]
         }
   ]
 }
