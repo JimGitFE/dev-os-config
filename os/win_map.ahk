@@ -20,6 +20,12 @@ return
 ; CMD.3 Kill Application
 <#q::Send, >!{F4}
 
+F12::Send, {Volume_Up}
+F11::Send, {Volume_Down}
+F10::Send, {Volume_Mute}
+F7::Send, {Media_Prev}
+F8::Send, {Media_Play_Pause}  ; Play/Pause media
+F9::Send, {Media_Next}
 F6::
     RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
     Sleep 100
@@ -31,13 +37,6 @@ F6::
     ; Hibernate
     ; DllCall("PowrProf\SetSuspendState", "int", 0, "int", 1, "int", 0)
 return
-
-F12::Send, {Volume_Up}
-F11::Send, {Volume_Down}
-F10::Send, {Volume_Mute}
-F7::Send, {Media_Prev}
-F8::Send, {Media_Play_Pause}  ; Play/Pause media
-F9::Send, {Media_Next}
 
 ; ############
 ; Keystrokes 
@@ -168,5 +167,4 @@ moveCursor(key, onFn, asMod = "LWin") {
     } else {
         Send, %wMod%%wShft%%key%
     }
-
 }

@@ -53,12 +53,22 @@
 
 1. `Left`, `Right`, `Up`, `Down`: **Move cursor to far end**
 2. `Delete`: **Forward delete**
+3. `k`, `;`, `o`, `l`: **Move cursor to far end**
 
 ## **(5) F#**: Function Keys
 <small>Often mapped to application-specific actions (e.g., in browsers, it may focus the address bar).</small>
 
 ### (5.1) Platform - Os Modifiers
-1. `F6` **Lock Screen** (CMD + CTRL + Q on mac)
+1. `F6`: **Lock Screen** (CMD + CTRL + Q on mac)
+2. `F7`, `F8`, `F9`: **Media Playback** (Previous, Pause, Next)
+3. `F10`, `F11`, `F12`: **Audio Control** (Mute, Vol. Down, Vol. Up)
+
+## **(6) RCMD** Right Command Key
+<small>Inverted T arrow keys at home row</small>
+
+### (6.1) Platform - Os Modifiers
+1. `k`, `;`, `o`, `l`: **Move Cursor** (Left, Right, Up, Down)
+2. `Shift` + `CapsLock` + [`k`, `;`, `o`, `l`]: **Resize / Move Window**
 
 # Keyboard Remapping - OpSys
 
