@@ -88,6 +88,10 @@ Input Mapper > Keyboard > Keystrokes Preset
 - `ALT` = `CTRL` (VSCode tab switcher)
 - `CMD` = `CTRL` + [`A`, `X`, `C`, `V`]
 
+# Keyboard Layouts
+
+Default, on magickeyboard, fn => CapsLock
+
 # VSCode Settings
 
 Keybindings, cursor up and down 4 lines with ALT <= CMD
