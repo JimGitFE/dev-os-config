@@ -2,7 +2,7 @@
   "description": "3 Application Specific (VSCode)",
   "manipulators": [
     {
-      "type": "basic",
+    "type": "basic",
       "from": {
         "key_code": "left_option",
         "modifiers": { "optional": ["any"] }
