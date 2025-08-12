@@ -2,30 +2,32 @@
 #SingleInstance Force
 
 
-; ######################
+; ####################################
 ; Platform / Os Modifiers 
-; CMD.1 & ALT.1 & F.1
-; ######################
+; CMD.1 & ALT.1 & F#.1 & RCMD.1 & FN.1
+; ####################################
 
-; CMD.1 App Finder Search
+; CMD.1.1 App Finder Search
 LWin::return
 RWin::return
 ~<#Space::Send, {RWin}
-; CMD.2 App-switching (interactive menu)
+; CMD.1.2 App-switching (interactive menu)
 <#Tab::
     Send, {LAlt down}{Tab}
     KeyWait, LWin 
     Send, {LAlt up}
 return
-; CMD.3 Kill Application
+; CMD.1.3 Kill Application
 <#q::Send, >!{F4}
-
-F12::Send, {Volume_Up}
-F11::Send, {Volume_Down}
-F10::Send, {Volume_Mute}
+; F#.1.1 Media Playback
 F7::Send, {Media_Prev}
 F8::Send, {Media_Play_Pause}  ; Play/Pause media
 F9::Send, {Media_Next}
+; F#.1.2 Audio Control
+F12::Send, {Volume_Up}
+F11::Send, {Volume_Down}
+F10::Send, {Volume_Mute}
+; F#.1.3 Lock Screen
 F6::
     RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
     Sleep 100
@@ -37,18 +39,51 @@ F6::
     ; Hibernate
     ; DllCall("PowrProf\SetSuspendState", "int", 0, "int", 1, "int", 0)
 return
+; FN.1.2 Forward Delete
+LCtrl & Backspace::moveCursor("{Delete}", "{Delete}")
+RWin & Backspace::moveCursor("{Backspace}", "{Delete}")
+; RCMD.1.1 Move Cursor
+RWin & k::moveCursor("{LEFT}", "{HOME}", "LAlt") ; ctrl l
+RWin & `;::moveCursor("{RIGHT}", "{END}", "LAlt") ; ctrl r
+RWin & o::moveCursor("{UP}", "{PgUp}") ; alt up
+RWin & l::moveCursor("{DOWN}", "{PgDn}") ; alt down
+moveCursor(key, onFn, asMod = "LWin") {
+    shft := GetKeyState("SHIFT","P")
+    ; FN.1.3 Move cursor to far end
+    fn := GetKeyState("LCtrl", "P")
+    ; CMD.2.1 Move cursor word by word
+    cmd := GetKeyState("LWin","P")
+    ; CMD.3.1 Move 4 lines
+    opt := GetKeyState("LAlt", "P")
+    preMod := asMod == "LAlt" or opt ? "^" : "!" ; on vscode nav tab @see Ref TODO
+
+    wShft := shft ? "+" : ""
+    wMod := cmd or opt ? preMod : ""
+
+    if (fn and opt) {
+        ; RCMD 1.2 Resize / Move Window
+        SendInput, {RWin Down}%key%
+    } else if (fn) {
+        Send, %wMod%%wShft%%onFn%
+    } else {
+        Send, %wMod%%wShft%%key%
+    }
+}
+#`;::return ; Disable emoji menu
+; Disable task view (cursorMove & tab)
+*Tab::
+    if GetKeyState("RWin", "P")  {
+        Send, {Tab} 
+        return
+    }
+    Send, {Blind}{Tab}
 
 ; ############
 ; Keystrokes 
 ; CMD.2 & ALT.2
 ; ############
 
-; CMD.1 Move cursor word by word
-<#Left::Send, ^{Left}
-<#Right::Send, ^{Right}
-<#+Left::Send, ^+{Left}
-<#+Right::Send, ^+{Right}
-; CMD.2 Standard shortcuts
+; CMD.2.2 Standard shortcuts
 #c::Send, ^c
 #x::Send, ^x
 <#v::Send, ^v
@@ -57,7 +92,7 @@ return
 <#+z::Send, ^+z
 <#s::Send, ^s
 <#r::Send, ^r
-; CMD.2 vsc
+; CMD.2.2 vsc
 <#j::Send, ^j
 <#d::Send, ^d
 <#w::Send, ^w
@@ -65,33 +100,20 @@ return
 <#+t::Send, ^+t
 <#f::Send, ^f
 ~<#l::Send, ^l
-; CMD.3 Delete word to left
+; CMD.2.3 Delete word to left
 <#Backspace::Send, ^{Backspace}
 <#Delete::Send, ^{Delete}
-
-cmdMap(key) {
-    cmd := GetKeyState("LWin")
-    if (cmd) {
-        Send, ^%key%
-    }
-
-}
 
 ; ############
 ; VScode
 ; CMD.3 & ALT.3
 ; ############
 
-; CMD.1 Move 4 lines
-; <#Up::Send, !{Up} ; Ctrl + Up
-; <#Down::Send, !{Down} ; Ctrl + Down
-; <#+Up::Send, !+{Up}
-; <#+Down::Send, !+{Down}
-; CMD.2 New line below
+; CMD.3.2 New line below
 <#Enter::Send, ^{Enter}
 <#\::Send, ^{Enter}
 >#\::Send, ^{Enter}
-; CMD.4 Panel Interactions
+; CMD.3.4 Panel Interactions
 <#/::Send, ^/
 <#b::Send, ^b
 <#i::Send, ^i
@@ -100,9 +122,9 @@ cmdMap(key) {
 <#+e::Send, ^+e
 <#+p::Send, ^+p
 <#+n::Send, ^+n
-; ALT.1 & ALT.2 Inner tab & Grab & move line 
+; ALT.3.1 & ALT.3.2 Inner tab & Grab & move line 
 *LAlt::LCtrl
-; ALT.4 App frame (tab) selector
+; ALT.3.4 App frame (tab) selector
 <#1::Send, !1
 <#2::Send, !2
 <#3::Send, !3
@@ -110,61 +132,12 @@ cmdMap(key) {
 <#5::Send, !5
 <#6::Send, !6
 
-; ############
+; #########################
+; Layout - Magic Keyboard EU
+; FN.4
+; #########################
 
-; Descisionsll
-; win tab (def to app swap)
-; alt up down (def to vscode win swap)
-
-Enter::Send, {sc056}  ; send "\"
-+Enter::+\      ; send "|"
-\::Send {Enter}    ; Pressing "\" sends Enter
-
-; Alternatively, using Alt...
-RWin & k::moveCursor("{LEFT}", "{HOME}", "LAlt") ; ctrl l
-RWin & `;::moveCursor("{RIGHT}", "{END}", "LAlt") ; ctrl r
-RWin & o::moveCursor("{UP}", "{PgUp}") ; alt up
-RWin & l::moveCursor("{DOWN}", "{PgDn}") ; alt down
-
-; FN key 
-; (macro var? = Capslock and Alt?!)
-LCtrl::Return
-LCtrl & Backspace::moveCursor("{Delete}", "{Delete}")
-RWin & Backspace::Send, {Backspace}
-
-; prevent tasks view
-*Tab::
-    if GetKeyState("RWin", "P")
-    {
-        ; When RWin is held and Tab pressed, send only Tab once
-        Send, {Tab} 
-        return
-    }
-    ; Otherwise, send Tab normally
-    Send, {Blind}{Tab}
-; return
-#`;::return ; Emoji disable
-
-; Constants
-macFn := "LCtrl" ; Unused
-
-; Navigation Combos
-moveCursor(key, onFn, asMod = "LWin") {
-    fn := GetKeyState("LCtrl", "P")  ; FN pressed
-    cmd := GetKeyState("LWin","P") ; merge with opt as cmd
-    opt := GetKeyState("LAlt", "P") ; Move line
-    shft := GetKeyState("SHIFT","P")
-    preMod := asMod == "LAlt" or opt ? "^" : "!" ; on vscode nav tab
-
-    wShft := shft ? "+" : "" ; With shift
-    wMod := cmd or opt ? preMod : ""
-
-    if (fn and opt) {
-        ; resize / move windows (ctrl shft)
-        SendInput, {RWin Down}%key%
-    } else if (fn) {
-        Send, %wMod%%wShft%%onFn%
-    } else {
-        Send, %wMod%%wShft%%key%
-    }
-}
+; FN.4.2 ANSI to ISO
+Enter::Send, {sc056}
++Enter::+\
+\::Send {Enter}
