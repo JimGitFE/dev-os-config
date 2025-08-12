@@ -14,14 +14,14 @@
 
 ### (1.2) Keystrokes - Standard shortcuts
 
-1. `Left`, `Right`: **Move cursor word by word**
+1. `k`, `;`: **Move cursor word by word**
 2. `C`, `V`, `X`, `A`, `R`, `F`, `L`, `D`: **Standard methods**
 3. `Delete`: **Delete word to left** (supr | Fn)
 4. **Console** standard behaviour (ctrl)
 
 ### (1.3) Vscode - InApp:
 
-1. `Up`, `Down`: **Move 4 lines**
+1. `o`, `l`: **Move 4 lines**
 2. `Enter`: **New line below**
 3. `I`: **Cursor to AI Chat**
 4. `B`, `X`, `E`, `P`, `N`, `J`, `/`: **Panel interactions**
@@ -35,8 +35,8 @@
 ### (2.3) Vscode - InApp:
 
 1. `Tab`: **Inner tab** (smooth interaction, + shift)
-2. `Up`, `Down`: **Grab & move line**
-2. `Shift` +  [`Up`, `Down`]: **Duplicate up or down**
+2. `o`, `l`: **Grab & move line**
+2. `Shift` +  [`o`, `l`]: **Duplicate up or down**
 5. `Numerics`: **App frame selector**
 
 ## **(3) CTRL**: Left Control Key
@@ -59,23 +59,26 @@
 <small>Often mapped to application-specific actions (e.g., in browsers, it may focus the address bar).</small>
 
 ### (5.1) Platform - Os Modifiers
-1. `F6`: **Lock Screen** (CMD + CTRL + Q on mac)
-2. `F7`, `F8`, `F9`: **Media Playback** (Previous, Pause, Next)
-3. `F10`, `F11`, `F12`: **Audio Control** (Mute, Vol. Down, Vol. Up)
+1. `F7`, `F8`, `F9`: **Media Playback** (Previous, Pause, Next)
+2. `F10`, `F11`, `F12`: **Audio Control** (Mute, Vol. Down, Vol. Up)
+3. `F6`: **Lock Screen** (CMD + CTRL + Q on mac)
 
-## **(6) RCMD** Right Command Key
+## **(6) RCMD**: Right Command Key
 <small>Inverted T arrow keys at home row</small>
 
 ### (6.1) Platform - Os Modifiers
 1. `k`, `;`, `o`, `l`: **Move Cursor** (Left, Right, Up, Down)
 2. `Shift` + `CapsLock` + [`k`, `;`, `o`, `l`]: **Resize / Move Window**
 
-# Keyboard Layouts
+## **(7) Keyboard Layout**
+<small>Key default swaps, muscle memory from ANSI, use `Magic Keyboard Utilities, (TODO: Driver Level, lwin + rwin)</small>
 
-## EU with Fn key
-
-CapsLock => LAlt
-FN => LCtrl
+### (7.4) Layout - Magic Keyboard EU
+1. `` ` `` → `\`: **Exchanged keys** (0x056, 0x029)
+2. `Enter` → `\`: **ANSI to ISO** (0x01C, 0x02B)
+3. `FN` → `LCtrl`: **Inverted T** (Home, End, PgUp, PgDn)
+4. `LCtrl` → `Unused` (Fallback)
+5. `CapsLock` → `Unused` (Fallback)
 
 # Keyboard Remapping - OpSys
 
@@ -107,7 +110,7 @@ Input Mapper > Keyboard > Keystrokes Preset
 
 # Keyboard Layouts
 
-Default, on magickeyboard, fn => CapsLock
+Default, on magickeyboard, fn → CapsLock
 
 # VSCode Settings
 
