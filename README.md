@@ -70,7 +70,7 @@
 2. `FN` + `Option` + [`k`, `semicolon`, `o`, `l`]: **Resize / Move Window**
 
 ## **(7) Keyboard Layout**
-<small>Key default swaps, muscle memory from ANSI, use `Magic Keyboard Utilities, (TODO: Driver Level, lwin + rwin)</small>
+<small>Key default swaps, muscle memory from ANSI, (TODO: Driver Level, lwin + rwin)</small>
 
 ### (7.4) Layout - Magic Keyboard EU
 1. `` ` `` → `\`: **Exchanged keys** (0x056, 0x029)
@@ -86,6 +86,7 @@
 ## Win: Auto Hot Key
 ```
 `Win + R` → `type: shell:startup` (win_map.ahk as shortcut with admin [x])
+Magic Keyboard Utilities
 ```
 - `Win` = `ALT` App switcher (default: alt)
 * `ALT` = `CTRL` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
@@ -95,6 +96,8 @@
 ## Mac: Karabiner-Elements
 ```
 Karabiner > Complex modifications > add `karabiner.json`
+# Keyboard layout
+rxhanson/Rectangle (github.com)
 ```
 - `CMD` + [`Delete`, `k`, `semicolon`] = `CTRL` (word by word)
 * `ALT` = `CTRL` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
