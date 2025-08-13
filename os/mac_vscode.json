@@ -12,6 +12,11 @@
         {
           "type": "frontmost_application_unless",
           "bundle_identifiers": [ "^com\\.utmapp\\.UTM$" ]
+        },
+        {
+          "type": "variable_if",
+          "name": "left_control_pressed",
+          "value": 0
         }
       ]
     },

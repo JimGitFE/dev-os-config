@@ -105,12 +105,6 @@
           "from": { "key_code": "delete_or_backspace", "modifiers": { "mandatory": ["left_control", "left_command"] } },
           "to": [{ "key_code": "delete_forward", "modifiers": ["left_option"] }],
           "conditions": [ { "type": "frontmost_application_unless", "bundle_identifiers": ["^com\\.utmapp\\.UTM$"] } ]        
-        },
-
-        {
-          "type": "basic",
-          "from": { "key_code": "k", "modifiers": { "mandatory": ["left_control","right_command"] } },
-          "to": [{ "key_code": "right_arrow", "modifiers": ["option","command"] }]
         }
   ]
 }
