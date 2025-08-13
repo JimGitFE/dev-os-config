@@ -31,7 +31,6 @@
 
 <small> **Option / Alt** Used for **application-specific** shortcuts (e.g., brush size, selecting frames in VSCode)</small>
 
-
 ### (2.3) Vscode - InApp:
 
 1. `Tab`: **Inner tab** (smooth interaction, + shift)
@@ -68,7 +67,7 @@
 
 ### (6.1) Platform - Os Modifiers
 1. `k`, `;`, `o`, `l`: **Move Cursor** (Left, Right, Up, Down)
-2. `Shift` + `CapsLock` + [`k`, `;`, `o`, `l`]: **Resize / Move Window**
+2. `FN` + `Option` + [`k`, `;`, `o`, `l`]: **Resize / Move Window**
 
 ## **(7) Keyboard Layout**
 <small>Key default swaps, muscle memory from ANSI, use `Magic Keyboard Utilities, (TODO: Driver Level, lwin + rwin)</small>

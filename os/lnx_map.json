@@ -668,5 +668,99 @@
         "output_symbol": "KEY_PAGEUP",
         "name": "4.1 Far Up",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 56
+            },
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 39
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L+Right",
+        "name": "6.2 Move Right",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 56
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 37
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + Left",
+        "name": "6.2 Move Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 56
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 24
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + Up",
+        "name": "6.2 Fullscren",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 56
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
+        ],
+        "target_uinput": "keyboard",
+        "name": "6.2 Minimize"
     }
 ]
