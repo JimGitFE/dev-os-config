@@ -51,76 +51,12 @@
         "input_combination": [
             {
                 "type": 1,
-                "code": 125
-            },
-            {
-                "type": 1,
-                "code": 106
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Control_R+Right",
-        "name": "2.1 Rght",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 125
-            },
-            {
-                "type": 1,
-                "code": 105
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Control_R+Left",
-        "name": "2.1 Left",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 125
-            },
-            {
-                "type": 1,
-                "code": 103
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Alt_L+Up",
-        "name": "3.1 Up",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
                 "code": 56
             }
         ],
         "target_uinput": "keyboard",
         "output_symbol": "Control_L",
         "name": "0 ALT",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 125
-            },
-            {
-                "type": 1,
-                "code": 108
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Alt_L+Down",
-        "name": "3.1 Dwn",
         "mapping_type": "key_macro"
     },
     {
@@ -509,6 +445,228 @@
         "target_uinput": "keyboard",
         "output_symbol": "Control_R+f",
         "name": "2.2 Find",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 24
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Up",
+        "name": "6.1 Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 39
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Right",
+        "name": "6.1 Right",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 37
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Left",
+        "name": "6.1 Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Down",
+        "name": "6.1 Down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 37
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Left",
+        "name": "2.1 Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 39
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_R+Right",
+        "name": "2.1 Rght",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Alt_L+Down",
+        "name": "3.1 Dwn",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 125
+            },
+            {
+                "type": 1,
+                "code": 24
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Alt_L+Up",
+        "name": "3.1 Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 39
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "End",
+        "name": "4.1 Far Right",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
+        ],
+        "target_uinput": "keyboard",
+        "name": "4.1 Far Down"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 37
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Home",
+        "name": "4.1 Far Left",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 126
+            },
+            {
+                "type": 1,
+                "code": 24
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_PAGEUP",
+        "name": "4.1 Far Up",
         "mapping_type": "key_macro"
     }
 ]
