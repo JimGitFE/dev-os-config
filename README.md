@@ -14,7 +14,7 @@
 
 ### (1.2) Keystrokes - Standard shortcuts
 
-1. `k`, `;`: **Move cursor word by word**
+1. `k`, `semicolon`: **Move cursor word by word**
 2. `C`, `V`, `X`, `A`, `R`, `F`, `L`, `D`: **Standard methods**
 3. `Delete`: **Delete word to left** (supr | Fn)
 4. **Console** standard behaviour (ctrl)
@@ -50,9 +50,9 @@
 
 ### (4.1) Platform - Os Modifiers
 
-1. `Left`, `Right`, `Up`, `Down`: **Move cursor to far end**
+1. `k`, `semicolon`, `o`, `l`: **Move cursor to far end**
 2. `Delete`: **Forward delete**
-3. `k`, `;`, `o`, `l`: **Move cursor to far end**
+3. `k`, `semicolon`, `o`, `l`: **Move cursor to far end**
 
 ## **(5) F#**: Function Keys
 <small>Often mapped to application-specific actions (e.g., in browsers, it may focus the address bar).</small>
@@ -66,8 +66,8 @@
 <small>Inverted T arrow keys at home row</small>
 
 ### (6.1) Platform - Os Modifiers
-1. `k`, `;`, `o`, `l`: **Move Cursor** (Left, Right, Up, Down)
-2. `FN` + `Option` + [`k`, `;`, `o`, `l`]: **Resize / Move Window**
+1. `k`, `semicolon`, `o`, `l`: **Move Cursor** (Left, Right, Up, Down)
+2. `FN` + `Option` + [`k`, `semicolon`, `o`, `l`]: **Resize / Move Window**
 
 ## **(7) Keyboard Layout**
 <small>Key default swaps, muscle memory from ANSI, use `Magic Keyboard Utilities, (TODO: Driver Level, lwin + rwin)</small>
@@ -96,7 +96,7 @@
 ```
 Karabiner > Complex modifications > add `karabiner.json`
 ```
-- `CMD` + [`Delete`, `Left`, `Right`] = `CTRL` (word by word)
+- `CMD` + [`Delete`, `k`, `semicolon`] = `CTRL` (word by word)
 * `ALT` = `CTRL` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
 ## Lnx: keyd (C) Xmodmap
@@ -115,8 +115,8 @@ Default, on magickeyboard, fn → CapsLock
 
 Keybindings, cursor up and down 4 lines with ALT <= CMD
 
-* `CMD` + [`Up`, `Down`] = `ALT` [`Up`, `Down`] Move cursor 4 lines (reason: VSCode interactive menu)
-- `CMD` + [`Left`, `Right`] = `CTRL` + [`Left`, `Right`] (VSCode, up down move line)
+* `CMD` + [`o`, `l`] = `ALT` [`o`, `l`] Move cursor 4 lines (reason: VSCode interactive menu)
+- `CMD` + [`k`, `semicolon`] = `CTRL` + [`k`, `semicolon`] (VSCode, up down move line)
 
 Config (Zoom / formatter / tab layout)
 Theme
