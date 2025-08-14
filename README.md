@@ -103,8 +103,9 @@ rxhanson/Rectangle (github.com)
 * `ALT` = `CTRL` (VSCode, ctrl deafult for tab interactive menu, also keeps Up / Down)
 
 ## Lnx: keyd (C) Xmodmap
-```
-Input Mapper > Keyboard > Keystrokes Preset
+```bash
+# Input Mapper > Keyboard > Keystrokes Preset
+gsettings set org.gnome.mutter overlay-key ''
 ```
 - `CMD` (App switcher Super + Shift + Tab`)
 - `ALT` = `CTRL` (VSCode tab switcher)
