@@ -122,6 +122,7 @@ moveCursor(key, onFn, asMod = "LWin") {
 <#+e::Send, ^+e
 <#+p::Send, ^+p
 <#+n::Send, ^+n
+<#+f::Send, ^+f
 ; ALT.3.1 & ALT.3.2 Inner tab & Grab & move line 
 *LAlt::LCtrl
 ; ALT.3.4 App frame (tab) selector
