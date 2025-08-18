@@ -77,6 +77,7 @@ moveCursor(key, onFn, asMod = "LWin") {
         return
     }
     Send, {Blind}{Tab}
+    return
 
 ; ############
 ; Keystrokes 
