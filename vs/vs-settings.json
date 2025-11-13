@@ -3,7 +3,6 @@
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
   "workbench.editor.labelFormat": "short",
-  "editor.formatOnSave": true,
   "update.mode": "manual",
   "terminal.integrated.env.windows": {},
   "console-ninja.featureSet": "Community",
@@ -12,6 +11,7 @@
   //
   "window.zoomLevel": -0.6,
   "workbench.sideBar.location": "left",
+  "workbench.editor.openSideBySideDirection": "down",
   "editor.minimap.enabled": false,
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "hidden",
@@ -59,6 +59,7 @@
   //
   // Formatting and linting settings
   //
+  "editor.formatOnSave": true,
   "prettier.configPath": ".prettierrc",
   "prettier.printWidth": 120,
   "prettier.requireConfig": true,
