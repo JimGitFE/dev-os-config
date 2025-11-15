@@ -35,8 +35,10 @@
 
 1. `Tab`: **Inner tab** (smooth interaction, + shift)
 2. `o`, `l`: **Grab & move line**
-2. `Shift` +  [`o`, `l`]: **Duplicate up or down**
+3. `Shift` +  [`o`, `l`]: **Duplicate up or down**
 5. `Numerics`: **App frame selector**
+6. `Shift`+ `j`: **Split terminal**
+7. `left`, `right`: **Next/Prev terminal pane**
 
 ## **(3) CTRL**: Left Control Key
 

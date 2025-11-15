@@ -10,7 +10,7 @@
   // Editor Layout settings
   //
   "window.zoomLevel": -0.6,
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "workbench.editor.openSideBySideDirection": "down",
   "editor.minimap.enabled": false,
   "workbench.statusBar.visible": false,
