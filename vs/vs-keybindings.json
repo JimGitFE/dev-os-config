@@ -182,5 +182,11 @@
     "key": "alt+left",
     "command": "-workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
+  },
+  // Explorer > `Enter` opens file
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   }
 ]

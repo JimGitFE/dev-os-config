@@ -10,7 +10,7 @@
 
 1. `Space`: **App Finder Search**
 2. `Tab`: **App-Switching**
-3. `Q`: **Kill application**
+3. `Q`: **Kill application** (Window, tab group)
 
 ### (1.2) Keystrokes - Standard shortcuts
 
